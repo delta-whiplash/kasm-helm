@@ -1,3 +1,43 @@
 apiVersion: v1
-entries: {}
-generated: "2026-04-29T10:40:00Z"
+entries:
+  kasm:
+  - annotations:
+      category: Virtual Desktop
+      images: |
+        - name: kasm-api
+          image: kasmweb/api:1.18.1
+        - name: kasm-manager
+          image: kasmweb/manager:1.18.1
+        - name: kasm-db
+          image: kasmweb/postgres:1.18.1
+        - name: kasm-proxy
+          image: kasmweb/proxy:1.18.1
+        - name: kasm-guac
+          image: kasmweb/kasm-guac:1.18.1
+        - name: rdp-gateway
+          image: kasmweb/rdp-gateway:1.18.1
+        - name: rdp-gateway
+          image: kasmweb/rdp-https-gateway:1.18.1
+    apiVersion: v2
+    appVersion: 1.18.1
+    created: "2026-04-29T10:45:11.358733083Z"
+    description: Kasm is a platform specializing in providing secure browser-based
+      workspaces for a wide range of applications and industries. Its main goal is
+      to provide isolated and secure environments that can be accessed via web browsers,
+      ensuring that users can perform tasks without risking the security of their
+      local systems.
+    digest: ee864c6f1ca15408559af02c66862f0b7862064127d7f0459c82e74d9ddf355a
+    home: https://kasm.com
+    icon: https://kasm-static-content.s3.amazonaws.com/icons/kasm-logo-small.png
+    keywords:
+    - kasm
+    - vdi
+    - workspaces
+    maintainers:
+    - name: Kasm Technologies, Inc.
+      url: https://github.com/kasmtech/kasm-helm
+    name: kasm
+    urls:
+    - https://github.com/delta-whiplash/kasm-helm/releases/download/kasm-1.1181.2/kasm-1.1181.2.tgz
+    version: 1.1181.2
+generated: "2026-04-29T10:45:11.358738666Z"
